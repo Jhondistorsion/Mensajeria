@@ -33,6 +33,7 @@ public class segundoActivity extends AppCompatActivity {
         String texto = String.valueOf(edt_enviado2.getText());
         Intent intent = new Intent();
         intent.putExtra(EXTRA_RESPUESTA2,texto);
+        setResult(RESULT_OK,intent);
         finish();
     }
 
